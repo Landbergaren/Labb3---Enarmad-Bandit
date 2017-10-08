@@ -1,12 +1,37 @@
-﻿<Window x:Class="Labb3___Enarmad_Bandit.MainWindow"
+﻿<Window x:Class="Enarmad_Bandit.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Labb3___Enarmad_Bandit"
+        xmlns:local="clr-namespace:Enarmad_Bandit"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+        Title="MainWindow" Height="400" Width="400">
+
+    <Border Padding="20">
+        <StackPanel HorizontalAlignment="Center" >
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="1" Width="100">
+                    <TextBlock Text="Namn"/>
+                    <TextBox x:Name="txtName" Margin="0 0 0 10"/>
+                    <TextBlock Text="Land"/>
+                    <TextBox x:Name="txtCountry" Margin="0 0 0 10"/>
+                    <TextBlock Text="Telefonnummer"/>
+                    <TextBox x:Name="txtTele" Margin=" 0 0 0 10"/>
+                    <TextBlock Text="Personnummer"/>
+                    <TextBox  x:Name="txtSecurityNr" Margin=" 0 0 0 10"/>
+                    <Button Content="Play!" Click="Button_Click" Margin=" 0 20"/>
+                </StackPanel>
+                <StackPanel Grid.Column="0" Width="100" VerticalAlignment="Center">
+                    <Image Source="C:\Users\MiniTomato\Source\Repos\Enarmad-Bandit\Enarmad Bandit\lodrätt.jpg" Height="65"/>
+                    <Image Source="C:\Users\MiniTomato\Source\Repos\Enarmad-Bandit\Enarmad Bandit\vågrätt.jpg" Height="65" Margin=" 0 5"/>
+                    <Image Source="C:\Users\MiniTomato\Source\Repos\Enarmad-Bandit\Enarmad Bandit\diagonalt.jpg" Height="65" />
+                </StackPanel>
+            </Grid>
+        </StackPanel>
+    </Border>
 </Window>
