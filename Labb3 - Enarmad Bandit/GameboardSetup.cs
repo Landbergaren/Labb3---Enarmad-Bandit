@@ -5,14 +5,14 @@ using System.Windows.Media.Imaging;
 
 namespace Enarmad_Bandit
 {
-    public class GameBoard
+    public class GameBoardSetup
     {
         double winValue;
         string slotType;
 
         static Random randomValue = new Random();
 
-        public GameBoard()
+        public GameBoardSetup()
         {
 
         }
@@ -26,7 +26,7 @@ namespace Enarmad_Bandit
             return number;
         }
         // Set the new cards upon a new spin
-        public static string SetSlotCard(int value, GameBoard element)
+        public static string SetSlotCard(int value, GameBoardSetup element)
         {
             if (value > 0 && value < 3)
             {
