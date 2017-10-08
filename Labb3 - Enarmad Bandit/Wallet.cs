@@ -12,16 +12,13 @@ namespace Enarmad_Bandit
         public Wallet()
         {
             balance = 0;
-            credit = 0;
         }
 
         //Fields
         double balance;
-        double credit;
 
         public double Balance { get => balance; }
-        public double Credit { get => credit; }
-
+ 
         //Behaviours
         public void AddWinnings(double winning)
         {

@@ -62,7 +62,7 @@ namespace Enarmad_Bandit
             {
                 element.winValue = 1.5;
                 element.slotType = "Nine";
-                return "Enarmad Bandit/Nine.jpg";
+                return "C:/Users/MiniTomato/Source/Repos/Enarmad-Bandit/Enarmad Bandit/Nine.jpg";
             }
             return "error wrong value to set slotcard";
         }
