@@ -15,7 +15,7 @@ namespace Enarmad_Bandit
         //instances
         Person player = new Person();
         Wallet wallet = new Wallet();
-        GameBoard[,] GameBoardValues = new GameBoard[3, 3];
+        GameBoardSetup[,] GameBoardValues = new GameBoardSetup[3, 3];
 
         public Gameboard()
         {
@@ -57,22 +57,22 @@ namespace Enarmad_Bandit
                 txtBank.Text = (wallet.Balance).ToString("0.00");
 
                 //change image - first row
-                GameBoard.ChangeSlotImage(sq00, GameBoard.SetSlotCard(GameBoard.GetSlotFigure(), GameBoardValues[0, 0]));
-                GameBoard.ChangeSlotImage(sq10, GameBoard.SetSlotCard(GameBoard.GetSlotFigure(), GameBoardValues[1, 0]));
-                GameBoard.ChangeSlotImage(sq20, GameBoard.SetSlotCard(GameBoard.GetSlotFigure(), GameBoardValues[2, 0]));
+                GameBoardSetup.ChangeSlotImage(sq00, GameBoardSetup.SetSlotCard(GameBoardSetup.GetSlotFigure(), GameBoardValues[0, 0]));
+                GameBoardSetup.ChangeSlotImage(sq10, GameBoardSetup.SetSlotCard(GameBoardSetup.GetSlotFigure(), GameBoardValues[1, 0]));
+                GameBoardSetup.ChangeSlotImage(sq20, GameBoardSetup.SetSlotCard(GameBoardSetup.GetSlotFigure(), GameBoardValues[2, 0]));
                 //change image - second row
-                GameBoard.ChangeSlotImage(sq01, GameBoard.SetSlotCard(GameBoard.GetSlotFigure(), GameBoardValues[0, 1]));
-                GameBoard.ChangeSlotImage(sq11, GameBoard.SetSlotCard(GameBoard.GetSlotFigure(), GameBoardValues[1, 1]));
-                GameBoard.ChangeSlotImage(sq21, GameBoard.SetSlotCard(GameBoard.GetSlotFigure(), GameBoardValues[2, 1]));
+                GameBoardSetup.ChangeSlotImage(sq01, GameBoardSetup.SetSlotCard(GameBoardSetup.GetSlotFigure(), GameBoardValues[0, 1]));
+                GameBoardSetup.ChangeSlotImage(sq11, GameBoardSetup.SetSlotCard(GameBoardSetup.GetSlotFigure(), GameBoardValues[1, 1]));
+                GameBoardSetup.ChangeSlotImage(sq21, GameBoardSetup.SetSlotCard(GameBoardSetup.GetSlotFigure(), GameBoardValues[2, 1]));
                 //change image - third row
-                GameBoard.ChangeSlotImage(sq02, GameBoard.SetSlotCard(GameBoard.GetSlotFigure(), GameBoardValues[0, 2]));
-                GameBoard.ChangeSlotImage(sq12, GameBoard.SetSlotCard(GameBoard.GetSlotFigure(), GameBoardValues[1, 2]));
-                GameBoard.ChangeSlotImage(sq22, GameBoard.SetSlotCard(GameBoard.GetSlotFigure(), GameBoardValues[2, 2]));
+                GameBoardSetup.ChangeSlotImage(sq02, GameBoardSetup.SetSlotCard(GameBoardSetup.GetSlotFigure(), GameBoardValues[0, 2]));
+                GameBoardSetup.ChangeSlotImage(sq12, GameBoardSetup.SetSlotCard(GameBoardSetup.GetSlotFigure(), GameBoardValues[1, 2]));
+                GameBoardSetup.ChangeSlotImage(sq22, GameBoardSetup.SetSlotCard(GameBoardSetup.GetSlotFigure(), GameBoardValues[2, 2]));
 
                 //Check for winning results
                 if (GameBoardValues[0, 0].SlotType == GameBoardValues[1, 0].SlotType && GameBoardValues[1, 0].SlotType == GameBoardValues[2, 0].SlotType)
                 {
-                    winning += GameBoard.CalculateWin(GameBoardValues[1, 0].WinValue, credit);
+                    winning += GameBoardSetup.CalculateWin(GameBoardValues[1, 0].WinValue, credit);
                     bo00.Background = Brushes.Red;
                     bo10.Background = Brushes.Red;
                     bo20.Background = Brushes.Red;
@@ -80,7 +80,7 @@ namespace Enarmad_Bandit
                 }
                 if (GameBoardValues[0, 1].SlotType == GameBoardValues[1, 1].SlotType && GameBoardValues[1, 1].SlotType == GameBoardValues[2, 1].SlotType)
                 {
-                    winning += GameBoard.CalculateWin(GameBoardValues[1, 1].WinValue, credit);
+                    winning += GameBoardSetup.CalculateWin(GameBoardValues[1, 1].WinValue, credit);
                     bo01.Background = Brushes.Red;
                     bo11.Background = Brushes.Red;
                     bo21.Background = Brushes.Red;
@@ -88,7 +88,7 @@ namespace Enarmad_Bandit
                 }
                 if (GameBoardValues[0, 2].SlotType == GameBoardValues[1, 2].SlotType && GameBoardValues[1, 2].SlotType == GameBoardValues[2, 2].SlotType)
                 {
-                    winning += GameBoard.CalculateWin(GameBoardValues[1, 2].WinValue, credit);
+                    winning += GameBoardSetup.CalculateWin(GameBoardValues[1, 2].WinValue, credit);
                     bo02.Background = Brushes.Red;
                     bo12.Background = Brushes.Red;
                     bo22.Background = Brushes.Red;
@@ -96,7 +96,7 @@ namespace Enarmad_Bandit
                 }
                 if (GameBoardValues[0, 0].SlotType == GameBoardValues[0, 1].SlotType && GameBoardValues[0, 1].SlotType == GameBoardValues[0, 2].SlotType)
                 {
-                    winning += GameBoard.CalculateWin(GameBoardValues[0, 1].WinValue, credit);
+                    winning += GameBoardSetup.CalculateWin(GameBoardValues[0, 1].WinValue, credit);
                     bo00.Background = Brushes.Red;
                     bo01.Background = Brushes.Red;
                     bo02.Background = Brushes.Red;
@@ -104,7 +104,7 @@ namespace Enarmad_Bandit
                 }
                 if (GameBoardValues[1, 0].SlotType == GameBoardValues[1, 1].SlotType && GameBoardValues[1, 1].SlotType == GameBoardValues[1, 2].SlotType)
                 {
-                    winning += GameBoard.CalculateWin(GameBoardValues[1, 1].WinValue, credit);
+                    winning += GameBoardSetup.CalculateWin(GameBoardValues[1, 1].WinValue, credit);
                     bo10.Background = Brushes.Red;
                     bo11.Background = Brushes.Red;
                     bo12.Background = Brushes.Red;
@@ -112,7 +112,7 @@ namespace Enarmad_Bandit
                 }
                 if (GameBoardValues[2, 0].SlotType == GameBoardValues[2, 1].SlotType && GameBoardValues[2, 1].SlotType == GameBoardValues[2, 2].SlotType)
                 {
-                    winning += GameBoard.CalculateWin(GameBoardValues[2, 1].WinValue, credit);
+                    winning += GameBoardSetup.CalculateWin(GameBoardValues[2, 1].WinValue, credit);
                     bo20.Background = Brushes.Red;
                     bo21.Background = Brushes.Red;
                     bo22.Background = Brushes.Red;
@@ -120,7 +120,7 @@ namespace Enarmad_Bandit
                 }
                 if (GameBoardValues[0, 0].SlotType == GameBoardValues[1, 1].SlotType && GameBoardValues[1, 1].SlotType == GameBoardValues[2, 2].SlotType)
                 {
-                    winning += GameBoard.CalculateWin(GameBoardValues[1, 1].WinValue, credit);
+                    winning += GameBoardSetup.CalculateWin(GameBoardValues[1, 1].WinValue, credit);
                     bo00.Background = Brushes.Red;
                     bo11.Background = Brushes.Red;
                     bo22.Background = Brushes.Red;
@@ -128,7 +128,7 @@ namespace Enarmad_Bandit
                 }
                 if (GameBoardValues[0, 2].SlotType == GameBoardValues[1, 1].SlotType && GameBoardValues[1, 1].SlotType == GameBoardValues[2, 0].SlotType)
                 {
-                    winning += GameBoard.CalculateWin(GameBoardValues[1, 1].WinValue, credit);
+                    winning += GameBoardSetup.CalculateWin(GameBoardValues[1, 1].WinValue, credit);
                     bo02.Background = Brushes.Red;
                     bo11.Background = Brushes.Red;
                     bo20.Background = Brushes.Red;
@@ -154,7 +154,7 @@ namespace Enarmad_Bandit
             {
                 for (int j = 0; j < 3; j++)
                 {
-                    GameBoardValues[i, j] = new GameBoard();
+                    GameBoardValues[i, j] = new GameBoardSetup();
                 }
             }
         }

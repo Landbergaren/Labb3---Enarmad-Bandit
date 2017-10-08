@@ -9,7 +9,7 @@
     <Border Padding="10">
         <StackPanel Width="580">
             <Grid>
-                <Image Source="C:\Users\MiniTomato\Source\Repos\Enarmad-Bandit\Enarmad Bandit\3xCard.jpg" Margin="0 10" Width="550"/>
+                <Image Source="3xCard.jpg" Margin="0 10" Width="550"/>
             </Grid>
             <Grid>
                 <Grid.ColumnDefinitions>
@@ -36,35 +36,35 @@
                 </Grid.ColumnDefinitions>
                 <StackPanel Grid.Column="0" >
                     <Border x:Name="bo00" >
-                        <Image x:Name="sq00"  Source="C:\Users\MiniTomato\Source\Repos\Enarmad-Bandit\Enarmad Bandit\Flippedcard.jpg"  Height="100" Width="80"/>
+                        <Image x:Name="sq00" Source="Flippedcard.jpg"  Height="100" Width="80"/>
                     </Border>
                     <Border x:Name="bo01" >
-                        <Image x:Name="sq01" Source="C:\Users\MiniTomato\Source\Repos\Enarmad-Bandit\Enarmad Bandit\Flippedcard.jpg" Height="100" Width="80"/>
+                        <Image x:Name="sq01" Source="Flippedcard.jpg" Height="100" Width="80"/>
                     </Border>
                     <Border x:Name="bo02" >
-                        <Image x:Name="sq02" Source="C:\Users\MiniTomato\Source\Repos\Enarmad-Bandit\Enarmad Bandit\Flippedcard.jpg" Height="100" Width="80"/>
+                        <Image x:Name="sq02" Source="Flippedcard.jpg" Height="100" Width="80"/>
                     </Border>
                 </StackPanel>
                 <StackPanel Grid.Column="1">
                     <Border x:Name="bo10" >
-                        <Image x:Name="sq10" Source="C:\Users\MiniTomato\Source\Repos\Enarmad-Bandit\Enarmad Bandit\Flippedcard.jpg" Height="100" Width="80"/>
+                        <Image x:Name="sq10" Source="Flippedcard.jpg" Height="100" Width="80"/>
                     </Border>
                     <Border x:Name="bo11" >
-                        <Image x:Name="sq11" Source="C:\Users\MiniTomato\Source\Repos\Enarmad-Bandit\Enarmad Bandit\Flippedcard.jpg" Height="100" Width="80"/>
+                        <Image x:Name="sq11" Source="Flippedcard.jpg" Height="100" Width="80"/>
                     </Border>
                     <Border x:Name="bo12" >
-                        <Image x:Name="sq12" Source="C:\Users\MiniTomato\Source\Repos\Enarmad-Bandit\Enarmad Bandit\Flippedcard.jpg" Height="100" Width="80"/>
+                        <Image x:Name="sq12" Source="Flippedcard.jpg" Height="100" Width="80"/>
                     </Border>
                 </StackPanel>
                 <StackPanel Grid.Column="2">
                     <Border x:Name="bo20" >
-                        <Image x:Name="sq20" Source="C:\Users\MiniTomato\Source\Repos\Enarmad-Bandit\Enarmad Bandit\Flippedcard.jpg" Height="100" Width="80" />
+                        <Image x:Name="sq20" Source="Flippedcard.jpg" Height="100" Width="80" />
                     </Border>
                     <Border x:Name="bo21" >
-                        <Image x:Name="sq21" Source="C:\Users\MiniTomato\Source\Repos\Enarmad-Bandit\Enarmad Bandit\Flippedcard.jpg" Height="100" Width="80" />
+                        <Image x:Name="sq21" Source="Flippedcard.jpg" Height="100" Width="80" />
                     </Border>
                     <Border x:Name="bo22" >
-                        <Image x:Name="sq22" Source="C:\Users\MiniTomato\Source\Repos\Enarmad-Bandit\Enarmad Bandit\Flippedcard.jpg" Height="100" Width="80"/>
+                        <Image x:Name="sq22" Source="Flippedcard.jpg" Height="100" Width="80"/>
                     </Border>
                 </StackPanel>
             </Grid>

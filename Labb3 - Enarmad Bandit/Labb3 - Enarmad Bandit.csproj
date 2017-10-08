@@ -54,7 +54,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-
+    <Compile Include="Wallet.cs" />
+    <Page Include="gameboard.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -63,7 +67,10 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-
+    <Compile Include="gameboard.xaml.cs">
+      <DependentUpon>gameboard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GameboardSetup.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -100,7 +107,7 @@
     <Resource Include="3xCard.jpg" />
     <Resource Include="diagonalt.jpg" />
     <Resource Include="Diamond.jpg" />
-    <Resource Include="Flippedcard.jpg" />
+    <Resource Include="Properties\Flippedcard.jpg" />
     <Resource Include="Jack.jpg" />
     <Resource Include="King.jpg" />
     <Resource Include="lodrätt.jpg" />
@@ -108,6 +115,9 @@
     <Resource Include="Queen.jpg" />
     <Resource Include="Ten.jpg" />
     <Resource Include="vågrätt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flippedcard.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

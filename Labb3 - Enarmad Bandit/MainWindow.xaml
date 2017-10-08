@@ -27,9 +27,9 @@
                     <Button Content="Play!" Click="Button_Click" Margin=" 0 20"/>
                 </StackPanel>
                 <StackPanel Grid.Column="0" Width="100" VerticalAlignment="Center">
-                    <Image Source="C:\Users\MiniTomato\Source\Repos\Enarmad-Bandit\Enarmad Bandit\lodrätt.jpg" Height="65"/>
-                    <Image Source="C:\Users\MiniTomato\Source\Repos\Enarmad-Bandit\Enarmad Bandit\vågrätt.jpg" Height="65" Margin=" 0 5"/>
-                    <Image Source="C:\Users\MiniTomato\Source\Repos\Enarmad-Bandit\Enarmad Bandit\diagonalt.jpg" Height="65" />
+                    <Image Source="lodrätt.jpg" Height="65"/>
+                    <Image Source="vågrätt.jpg" Height="65" Margin=" 0 5"/>
+                    <Image Source="diagonalt.jpg" Height="65" />
                 </StackPanel>
             </Grid>
         </StackPanel>

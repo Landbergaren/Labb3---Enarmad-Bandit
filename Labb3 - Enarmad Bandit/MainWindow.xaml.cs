@@ -1,28 +1,40 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using System.Windows;
 
-namespace Labb3___Enarmad_Bandit
+namespace Enarmad_Bandit
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
+        private static string name1;
+        private static string country;
+        private static string securitynr;
+        private static string tele;
+
+        public static string Name1 { get => name1; }
+        public static string Country { get => country; }
+        public static string Securitynr { get => securitynr; }
+        public static string Tele { get => tele; }
+
         public MainWindow()
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            name1 = txtName.Text;
+            country = txtCountry.Text;
+            securitynr = txtSecurityNr.Text;
+            tele = txtTele.Text;
+
+
+            new Gameboard().Show();
+            this.Close();
+
+        }
     }
 }
+
+
