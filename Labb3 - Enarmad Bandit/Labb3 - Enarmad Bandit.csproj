@@ -68,6 +68,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -92,6 +93,19 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="3xCard.jpg" />
+    <Resource Include="diagonalt.jpg" />
+    <Resource Include="Diamond.jpg" />
+    <Resource Include="Flippedcard.jpg" />
+    <Resource Include="Jack.jpg" />
+    <Resource Include="King.jpg" />
+    <Resource Include="lodrätt.jpg" />
+    <Resource Include="Nine.jpg" />
+    <Resource Include="Queen.jpg" />
+    <Resource Include="Ten.jpg" />
+    <Resource Include="vågrätt.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
